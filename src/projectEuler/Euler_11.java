@@ -3,6 +3,16 @@ package projectEuler;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/*
+ * https://projecteuler.net/problem=11
+ * In the 20×20 grid below, four numbers along a diagonal line have been marked
+ * in red.
+ * The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
+ * What is the greatest product of four adjacent numbers in the same direction
+ * (up, down, left, right, or diagonally) in the 20×20 grid?
+ * 
+ * COMPLETED ON 18/02/18
+ */
 public class Euler_11 {
 	/* @formatter:off */
 	private static final Integer[][] GRID = {
@@ -31,8 +41,8 @@ public class Euler_11 {
 	public static void main(String[] args) {
 		Integer curProduct = 0;
 		ArrayList<Integer> values = null;
-		
-		//Horizontal
+
+		// Horizontal
 		for (int i = 0; i < GRID.length; i++) {
 			for (int j = 0; j < GRID[i].length - 4; j++) {
 				int a = GRID[i][j];
@@ -48,8 +58,8 @@ public class Euler_11 {
 				}
 			}
 		}
-		
-		//Vertical
+
+		// Vertical
 		for (int i = 0; i < GRID.length - 4; i++) {
 			for (int j = 0; j < GRID[i].length; j++) {
 				int a = GRID[i][j];
@@ -65,8 +75,8 @@ public class Euler_11 {
 				}
 			}
 		}
-		
-		//Diagonal principal
+
+		// Diagonal principal
 		for (int i = 0; i < GRID.length - 4; i++) {
 			for (int j = 0; j < GRID[i].length - 4; j++) {
 				int a = GRID[i][j];
@@ -82,8 +92,8 @@ public class Euler_11 {
 				}
 			}
 		}
-		
-		//Diagonal secundaria
+
+		// Diagonal secundaria
 		for (int i = 0; i < GRID.length - 4; i++) {
 			for (int j = 3; j < GRID[i].length; j++) {
 				int a = GRID[i][j];

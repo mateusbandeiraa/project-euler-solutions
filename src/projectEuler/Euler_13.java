@@ -2,17 +2,25 @@ package projectEuler;
 
 import java.math.BigInteger;
 
-public class Euler_13{
-	//EU SEI QUE É ROUBADO FAZER ISSO.
+/*
+ * https://projecteuler.net/problem=13
+ * Work out the first ten digits of the sum of the following one-hundred
+ * 50-digit numbers.
+ * 
+ * COMPLETED ON 02/03/18
+ */
+public class Euler_13 {
+	// EU SEI QUE É ROUBADO FAZER ISSO.
 	public static void main(String[] args) {
 		BigInteger curNumber = new BigInteger("0");
-		for(int i = 0; i < NUMBERS.length; i++) {
+		for (int i = 0; i < NUMBERS.length; i++) {
 			BigInteger HEAD = new BigInteger(NUMBERS[i]);
 			curNumber = curNumber.add(HEAD);
 		}
 		System.out.println(curNumber.toString());
 	}
-	
+
+	/* @formatter:off */
 	public static final String[] NUMBERS =
 			{"37107287533902102798797998220837590246510135740250", 
 			"46376937677490009712648124896970078050417018260538" , 
@@ -114,4 +122,5 @@ public class Euler_13{
 			"72107838435069186155435662884062257473692284509516" , 
 			"20849603980134001723930671666823555245252804609722" , 
 			"53503534226472524250874054075591789781264330331690"};
+	/* @formatter:on */
 }
