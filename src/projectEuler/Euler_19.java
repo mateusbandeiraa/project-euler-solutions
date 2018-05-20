@@ -21,6 +21,10 @@ package projectEuler;
  * (1 Jan 1901 to 31 Dec 2000)?
  * 
  * COMPLETED ON 19/05/18
+ * 
+ * I know there's probably a cleverer way to do this, but I did use this method
+ * because not only it can do what is meant to in the problem, but can also
+ * return the total sundaysCount in the 20th century.
  */
 public class Euler_19 {
 	public static void main(String[] args) {
