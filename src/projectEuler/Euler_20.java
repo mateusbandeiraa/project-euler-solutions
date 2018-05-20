@@ -13,6 +13,10 @@ import java.math.BigInteger;
  * Find the sum of the digits in the number 100!
  * 
  * COMPLETED ON 20/05/18
+ * 
+ * I know that using BigInteger looks kinda cheating. Most of Project Euler's
+ * problems have a clever not-so-obvious way of doing things. I just couldn't
+ * think of anything else. Maybe i'll come back to this problem later. TODO
  */
 public class Euler_20 {
 	public static void main(String[] args) {
